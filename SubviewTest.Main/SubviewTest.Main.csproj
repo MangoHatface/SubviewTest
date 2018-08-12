@@ -69,6 +69,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Delegates\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Entitlements.plist" />
@@ -80,6 +81,14 @@
     <Compile Include="Controllers\MainWindowController.cs" />
     <Compile Include="Controllers\MainWindowController.designer.cs">
       <DependentUpon>MainWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContainerView.cs" />
+    <Compile Include="Views\ContainerView.designer.cs">
+      <DependentUpon>ContainerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ContainerViewController.cs" />
+    <Compile Include="Controllers\ContainerViewController.designer.cs">
+      <DependentUpon>ContainerViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
