@@ -12,8 +12,7 @@ namespace SubviewTest
 
         public override void DidFinishLaunching(NSNotification notification)
         {
-            NSWindow mainWindow = NSApplication.SharedApplication.MainWindow;
-            mainWindow.MovableByWindowBackground = true;
+            // Insert code here to initialize your application
         }
 
         public override void WillTerminate(NSNotification notification)

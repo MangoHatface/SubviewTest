@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Delegates\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Entitlements.plist" />
@@ -74,7 +76,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Delegates\AppDelegate.cs" />
+    <Compile Include="Controllers\MainWindowController.cs" />
+    <Compile Include="Controllers\MainWindowController.designer.cs">
+      <DependentUpon>MainWindowController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\Main.storyboard" />

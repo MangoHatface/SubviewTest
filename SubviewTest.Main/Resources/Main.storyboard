@@ -106,7 +106,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="774" y="334" width="150" height="150"/>
