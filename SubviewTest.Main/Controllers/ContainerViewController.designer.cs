@@ -12,9 +12,26 @@ namespace SubviewTest.Controllers
 	[Register ("ContainerViewController")]
 	partial class ContainerViewController
 	{
+		[Outlet]
+		AppKit.NSTextField NumberOfSubviewsBox { get; set; }
+
+		[Outlet]
+		AppKit.NSView SubviewContainerView { get; set; }
+
+		[Action ("AddSubviewButtonClick:")]
+		partial void AddSubviewButtonClick (Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (NumberOfSubviewsBox != null) {
+				NumberOfSubviewsBox.Dispose ();
+				NumberOfSubviewsBox = null;
+			}
+
+			if (SubviewContainerView != null) {
+				SubviewContainerView.Dispose ();
+				SubviewContainerView = null;
+			}
 		}
 	}
 }
